@@ -1,2 +1,2 @@
-# Solotainment
-Watch movies 😃​
+#SOLOTAINMENT 
+##The Home of Entertainment for Sololearner 😃​
