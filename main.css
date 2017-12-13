@@ -17,6 +17,9 @@ body {
 
 /*footer*/
 footer {
-    background-color: #3B464C;    
-    padding: 4%;
+    background-color: #3B464C;
+}
+#glyphicon {
+	display: inline;
+	font-size: 50px;
 }
