@@ -1,0 +1,22 @@
+body {
+    background-color: #EAEDF2;
+}
+#header {
+    background-color: #3B464C;
+    padding-bottom: 0;
+    color: #00f;
+}
+/* movie list*/
+.movie-list {
+    background-color: #18A08D;
+}
+.movie-list-anchor {
+    color: #000;
+    font-weight: bold;
+}
+
+/*footer*/
+footer {
+    background-color: #3B464C;    
+    padding: 4%;
+}
