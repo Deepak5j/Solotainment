@@ -7,22 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
   <link rel="stylesheet" type="text/css" href="main.css">
- 
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script--> 
-
-  <!--
-  <script type="text/javascript">
-       $(document).on('click','.navbar-collapse.in',function(e) {
-    if( $(e.target).is('a') ) {
-        $(this).collapse('hide');
-    }
-    });
-  </script>
-  -->
-
-  <!-- Activity Feed -->
-    <!--combine -->
+  <!--combine -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!--motion -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -30,44 +18,45 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<!--Top Header-->
-<div class="jumbotron text-center" id="header">
-  <img src="images/solotainment-logo.png" width="10%" height="10%">
-  <h1 style="color:   #26B7AC">SOLOTAINMENT</h1>
-  <p style="color: #26a7AC">The Home of Entertainment for Sololearner</p> 
-    <!--navigation bar-->
-    <nav class="navbar navbar-inverse" >
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a href="https://www.sololearn.com/Profile/4687793" target="_blank">
-            <img class="img-circle" align="left" src="images/skull.jpg" width="10%" height="11%" style="margin:2%;">
-          </a>  
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar" >
-          <ul class="nav navbar-nav" >
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="https://github.com/Deepak5j/" target="_blank">Projects</a></li>
-            <li><a href="#cont">Contact</a></li>
-          </ul>
-        </div>
+  <!--1. Header-->
+  <div class="jumbotron text-center" id="header">
+    <img src="images/solotainment-logo.png" width="10%" height="10%">
+    <h1 style="color:   #26B7AC">SOLOTAINMENT</h1>
+    <p style="color: #26a7AC">The Home of Entertainment for Sololearner</p>   
+  </div>
+
+  <!--2. navigation bar  -->
+  <nav class="navbar-inverse"  >
+    <div class="container-fluid">
+      <div class="navbar-header"  >
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a href="https://www.sololearn.com/Profile/4687793" target="_blank">
+          <img class="img-circle" align="left" src="images/skull.jpg" width="10%" height="11%" style="margin:2%;">
+        </a>  
       </div>
-    </nav>
-</div>
+      <div class="collapse navbar-collapse" id="myNavbar" >
+        <ul class="nav navbar-nav" >
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="https://github.com/Deepak5j/" target="_blank">Projects</a></li>
+          <li><a href="#cont">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>      
 
-
-
-<!--main body-->
-<div class="container-fluid text-center" >
+<!--3. main body-->
+  <div class="container-fluid text-center" id="bbody">
+    <br>
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <p class="well movie-list "><a href="#" class="movie-list-anchor">Movie List</a></p>
-            <!--p><a href="#">Link</a></p-->
-            <!--p><a href="#">Link</a></p-->
+            <div class="well bbtn">
+              <a href="index.html" class="btn-block btn btn-default"> Home</a>
+              <a href="player.php" class="btn-block btn btn-info"> Movies</a>
+            </div>
         </div>
         <div class="col-sm-8 text-left"> 
             <div class="well well-lg text-justify">
@@ -91,7 +80,7 @@
                                 
                                 <div class="item">
                                     <!--img src="images/b.jpg" alt="Chicago" style="width:100%; height:100%"-->
-                                    <video width="100%" controls>
+                                    <video width="100%" height="100%" controls>
                                       <source src="videos/mov_bbb.mp4" type="video/mp4">
                                     </video>
                                 </div>

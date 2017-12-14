@@ -1,18 +1,15 @@
-body {
-    background-color: #EAEDF2;
-}
+/*1. top most*/
 #header {
     background-color: #3B464C;
-    padding-bottom: 0;
-    color: #00f;
+    margin-bottom: 0;
+}
+/*2. body*/
+#bbody {
+    background-color: #EAEDF2;
 }
 /* movie list*/
-.movie-list {
-    background-color: #18A08D;
-}
-.movie-list-anchor {
-    color: #000;
-    font-weight: bold;
+.bbtn button {
+    margin-bottom: 1px;
 }
 
 /*footer*/
