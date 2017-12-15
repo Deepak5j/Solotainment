@@ -11,23 +11,12 @@ function reload() {
   video.load(); 
 }
 
-function fullScreenEnter() {
-  var video = document.getElementById("myVideo");
-  // Mozilla
-  video.mozRequestFullScreen();
-  // Webkit for video elements only
-  video.webkitEnterFullScreen();
-}
-
-
-
-
-/*
 function makeLarge() { 
   var video = document.getElementById("myVideo");
-  video.width = 1000; 
+  video.width = 1200;
 }
 
+/*
 function makeSmall() { 
   var video = document.getElementById("myVideo");
   video.width = 250; 
