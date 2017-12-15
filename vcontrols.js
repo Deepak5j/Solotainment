@@ -10,6 +10,17 @@ function reload() {
   var video = document.getElementById("myVideo");
   video.load(); 
 }
+
+function toggleControls() { 
+  var video = document.getElementById("myVideo");
+  if (video.hasAttribute("controls")) {
+    video.removeAttribute("controls");
+  } else {
+    video.setAttribute("controls","controls")
+  }
+}
+
+
 /*
 function makeLarge() { 
   var video = document.getElementById("myVideo");

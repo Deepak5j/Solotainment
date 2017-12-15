@@ -57,11 +57,11 @@
     <!--3.1 LEFT, ANIGATION -->
     <div class="row content">
         <div class="col-sm-2 sidenav">
-            <div class="well bbtn">
+            <div class="well">
               <a href="index.html" class="btn-block btn btn-default"> Home</a>
               <button onclick="change('iron-man.mp4', 'IRON MAN', 'a.jpg')" class="btn-block btn btn-info">Iron Man</button>             
-              <button onclick="change('iron-man-2.mp4', 'IRON MAN 2', 'b.jpg')" class="btn-block btn btn-success ">Iron Man 2</button>
-              <button onclick="change('iron-man-3.mp4', 'IRON MAN 3', 'c.jpg')" class="btn-block btn btn-warning">Iron Man 3</button>
+              <button onclick="change('iron-man-2.mp4', 'IRON MAN 2', 'b.jpg')" class="btn-block btn btn-info ">Iron Man 2</button>
+              <button onclick="change('iron-man-3.mp4', 'IRON MAN 3', 'c.jpg')" class="btn-block btn btn-info">Iron Man 3</button>
             </div>          
         </div>
 
@@ -69,16 +69,17 @@
         <div class="col-sm-8 text-left"> 
             <div class="well well-sm text-justify">
               <!-- heading-->
-              <h1 id="myCaption" class="text-center">MOVIES SECTION</h1>
+              <!--h1 id="myCaption" class="text-center">MOVIES SECTION</h1-->
               <!-- video    -->
-              <video id="myVideo" poster="images/b.jpg" width="100%" height="100%" preload="metadata" controls>
+              <video id="myVideo" poster="images/b.jpg" width="100%" height="100%" controls>
                   <source src="videos/mov_bbb.mp4" type="video/mp4">
               </video>
               <!-- Video Controls -->
               <div>
                 <div class="btn-group btn-group-justified">
                   <a onclick="playPause()" class="btn btn-success">Play/Pause</a>
-                  <a onclick="reload()" class="btn btn-primary">Reload</a>
+                  <a onclick="reload()" class="btn btn-success">Reload</a>
+                  <a onclick="toggleControls()" class="btn btn-success">Toggle Controls</a>
                   <!--a onclick="makeLarge()" class="btn btn-primary">Large</a>
                   <a onclick="makeSmall()" class="btn btn-primary">Small</a>
                   <a onclick="fullScreenEnter()" class="btn btn-primary">Enter Fullscreen</a>
