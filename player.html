@@ -15,8 +15,20 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--motion -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function change(argument) {
+      var vid = document.getElementById("myVideo");
+      isSupp = vid.canPlayType("video/mp4");
+      if (isSupp == "") {
+        vid.src = "videos/" + argument;
+      } else {
+        vid.src = "videos/" + argument;
+      }
+    }
+  </script>
 </head>
 <body>
+
   <!--1. Top Header-->
   <div class="jumbotron text-center" id="header">
     <img src="images/solotainment-logo.png" width="10%" height="10%">
@@ -47,36 +59,34 @@
     </div>
   </nav>
 
-
-  <!--main body-->
+  <!--3. main body-->
   <div class="container-fluid text-center" id="bbody">
     <br>
+    <!--3.1 LEFT, ANIGATION -->
     <div class="row content">
         <div class="col-sm-2 sidenav">
             <div class="well bbtn">
               <a href="index.html" class="btn-block btn btn-default"> Home</a>
-              <button class="btn-block btn btn-info">Iron Man</button>              
-              <button class="btn-block btn btn-success ">Iron Man 2</button>
-              <button class="btn-block btn btn-warning">Iron Man 3</button>
+              <button onclick="change('iron-man.mp4')" class="btn-block btn btn-info">Iron Man</button>              
+              <button onclick="change('iron-man-2.mp4')" class="btn-block btn btn-success ">Iron Man 2</button>
+              <button onclick="change('iron-man-3.mp4')" class="btn-block btn btn-warning">Iron Man 3</button>
             </div>          
         </div>
+
+        <!--3.2 CENTER  most main start-->
         <div class="col-sm-8 text-left"> 
             <div class="well well-lg text-justify">
                 <h1 class="text-center">ACTIVITY FEED</h1>
                 <div class="well">
-                <!-- most main start-->
-                   <video width="100%" height="100%" controls>
+                   <video id="myVideo" width="100%" height="100%" controls>
                       <source src="videos/mov_bbb.mp4" type="video/mp4">
                   </video>
-                <!-- most main end-->
                 </div>
             </div>
             <hr>
         </div>
-    
-    
-    
-        <!-- Ad section-->
+        
+        <!-- 3.3 RIGHT, AdS section-->
         <div class="col-sm-2 sidenav">
             <div class="well">
                 <p>ADS 1</p>
@@ -92,7 +102,7 @@
     </div>
 </div>
 
-
+<!-- 4. FOOTER -->
 <footer class="container-fluid bg-4 text-center" id="cont">
     <div id="glyphicon">
       <a href="mailto:gautamxdeepak@gmail.com"><span class="glyphicon glyphicon-envelope"></span></a>
