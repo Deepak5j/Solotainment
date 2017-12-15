@@ -19,13 +19,7 @@ function fullScreenEnter() {
   video.webkitEnterFullScreen();
 }
 
-function fullScreenExit() {
-  var video = document.getElementById("myVideo");
-  // Mozilla
-  video.mozCancelFullScreen();
-  // Webkit
-  video.webkitCancelFullScreen();
-}
+
 
 
 /*
