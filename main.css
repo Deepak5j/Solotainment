@@ -3,9 +3,9 @@
     background-color: #3B464C;
     margin-bottom: 0;
 }
-/*2. body*/
+/*2. body  EAEDF2*/
 #bbody {
-    background-color: #EAEDF2;
+    background-color: #dfe4ec;
 }
 /* movie list*/
 
@@ -13,7 +13,7 @@
 footer {
     background-color: #3B464C;
 }
-#glyphicon {
+#gglyphicon {
 	display: inline;
 	font-size: 50px;
 }
@@ -22,4 +22,9 @@ video {
     width: 100%;
     height: auto;
     max-height: 100%;
+}
+.bborder {
+    border-style: solid;
+    border-color: #000;
+    border-width: 1px;
 }
