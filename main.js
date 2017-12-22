@@ -4,10 +4,10 @@ function change(argument, argument1, argument2) {
       vid.poster = "images/"+ argument2;
       isSupp = vid.canPlayType("video/mp4");
       if (isSupp == "") {
-        vid.src = "videos/" + argument;
+        vid.src = argument;
         cid.innerHTML = argument1;
       } else {
-        vid.src = "videos/" + argument;
+        vid.src = argument;
         cid.innerHTML = argument1;
       }
     }

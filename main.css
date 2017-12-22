@@ -22,6 +22,11 @@ video {
     width: 100%;
     height: auto;
     max-height: 100%;
+    border: 1px solid black !important;
+    /*opacity: 0.6;*/
+    /*transition: all 8s ease-in-out;*/
+    /*transform: rotate(300deg);*/
+    /*box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.75);*/
 }
 .bborder {
     border-style: solid;
