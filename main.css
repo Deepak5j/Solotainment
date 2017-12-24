@@ -20,13 +20,23 @@ footer {
 
 video {
     width: 100%;
+    height: 100%;
+    /*
+    width: 100%;
     height: auto;
     max-height: 100%;
-    border: 1px solid black !important;
+    border: 1px solid black !important;*/
     /*opacity: 0.6;*/
     /*transition: all 8s ease-in-out;*/
     /*transform: rotate(300deg);*/
     /*box-shadow: 12px 9px 13px rgba(0, 0, 0, 0.75);*/
+}
+#video_poster {
+    width:100%;
+    height:100%;
+    background-size:100% 100%;  
+    margin-bottom: 0;  
+    /*background-image:url(images/iron-man.jpg);*/
 }
 .bborder {
     border-style: solid;
