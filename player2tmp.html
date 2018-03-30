@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Solotainment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script--> 
+  <!-- Activity Feed -->
+    <!--combine -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--motion -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--motion -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- main js-->
+  <script src="main.js"></script>
+  <script src="vcontrols.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="kdmv1ow827mqkjy"></script>
+</head>
+<body>
+
+  <!--1. Top Header-->
+  <div class="jumbotron text-center" id="header">
+    <img src="images/solotainment-logo.png" width="100" height="100" alt="solotainment-logo">
+    <h1 style="color:   #26B7AC">SOLOTAINMENT</h1>
+    <p style="color: #26a7AC">The Home of Entertainment for Sololearner</p> 
+  </div>
+
+  <!--2. navigation bar-->
+  <nav class="navbar-inverse" >
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a href="https://www.sololearn.com/Profile/4687793" target="_blank">
+          <img class="img-circle" src="images/skull.jpg" style=" width:10%; height:11%;margin:2%;text-align:left;" alt="profile-logo">
+        </a>  
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar" >
+        <ul class="nav navbar-nav" >
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="#cont">Contact</a></li>
+          <li><a href="https://www.sololearn.com/" target="_blank">Sololearn</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!--3. main body-->
+  <div class="container-fluid text-center bbody">
+    <br>
+    <h4 id="myCaption" class="well text-center">MAIN SECTION</h4>
+    <!--3.1 LEFT, ANIGATION -->
+    <div class="row content"> <!--[videos/level-17.mp4] -->
+        <div class="col-sm-2 sidenav">
+            <div class="well">
+              <a href="index.html" class="btn-block btn btn-default"> Home</a>              
+              <button onclick="change('videos/level-17.mp4', 'LEVEL-17', 'level-17.jpg')" class="btn-block btn btn-info">Level 17</button>
+              <!--https://1fiag6j.oloadcdn.net/dl/l/yKxn8VELj0BFTdTV/v1l5F0E0yxo/Iron+Man+2008.720p.BrRip.x264.YIFY.mp4 -->
+              <button onclick="change('https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man.mp4', 'IRON MAN', 'iron-man.jpg')" class="btn-block btn btn-info">Iron Man</button>                                        
+              <!-- https://ph2dw5.oloadcdn.net/dl/l/Dn4ZsoxGvv-OB2e2/xgOq8JRrN_o/Iron.Man.II.x264.720p.mkv.mp4-->           
+              <button onclick="change('https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man%202.mp4', 'IRON MAN 2', 'iron-man-2.jpg')" class="btn-block btn btn-info ">Iron Man 2</button>
+              <button onclick="change('https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man%203.mp4', 'IRON MAN 3', 'iron-man-3.jpg')" class="btn-block btn btn-info">Iron Man 3</button>
+            </div>          
+        </div>
+
+        <!--3.2 CENTER  most main start-->
+        <div class="col-sm-8 text-left">
+            <div class="well well-sm text-justify">
+              <!-- heading-->
+              <!--h1 id="myCaption" class="text-center">MOVIES SECTION</h1-->
+              <!-- video    -->
+
+              <div id="video_poster">
+                <video id="myVideo" style="width:100% height:100%"  controls >
+                    <!--source src="http://dl.dropboxusercontent.com/s/520os7m2wf1lgxg/iron-man_mpeg4.mp4" type="video/mp4"-->
+                    <!--source src="https://drive.google.com/uc?export=download&id=0B4BsAbG4atWHQzVfLUU3UnhhZTA" type='video/webm'/-->
+                    <source src="https://www.youtube.com/embed/D4VETvxWe84" type="video/mp4">
+                </video>
+              </div>
+                
+              </div>
+              <!--div>
+                style="background:transparent no-repeat url('http://www.wpclipart.com/blanks/buttons/glossy_buttons/glossy_button_blank_orange_rectangle.png');background-size:100%; height: 100%"
+                <div class="btn-group btn-group-justified"-->
+                  <!--a onclick="playPause()" class="btn btn-success">Play/Pause</a>
+                  <a onclick="reload()" class="btn btn-success">Reload</a>
+                  <a onclick="toggleControls()" class="btn btn-success">Toggle Controls</a-->
+                  <!--a onclick="makeLarge()" class="btn btn-primary">Large</a>
+                  <a onclick="makeSmall()" class="btn btn-primary">Small</a>
+                  <a onclick="fullScreenEnter()" class="btn btn-primary">Enter Fullscreen</a>
+                  <a onclick="fullScreenExit()" class="btn btn-primary">Exit Fullscreen</a-->
+                <!--/div>
+              </div-->
+
+              <!-- Ad section 0 -->
+              <div class="well-sm bbody">
+                          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                          <!-- SolotainmentProject -->
+                          <ins class="adsbygoogle"
+                               style="display:block"
+                               data-ad-client="ca-pub-7589017359598217"
+                               data-ad-slot="6095013608"
+                               data-ad-format="auto"></ins>
+                          <script>
+                          (adsbygoogle = window.adsbygoogle || []).push({});
+                          </script>
+              </div>
+            </div>
+
+            <!-- Ad section 1-->
+            <div class="col-sm-2 sidenav bbody">
+                <div class="well-sm bbody">
+                          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                          <!-- solotainmentProjetc-2 -->
+                          <ins class="adsbygoogle"
+                               style="display:block"
+                               data-ad-client="ca-pub-7589017359598217"
+                               data-ad-slot="1183012981"
+                               data-ad-format="auto"></ins>
+                          <script>
+                          (adsbygoogle = window.adsbygoogle || []).push({});
+                          </script>
+                </div>
+            </div>
+
+
+        </div>    
+    </div>
+
+
+<div class="well-sm text-center bbody">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- solotainmentProjetc-3 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-7589017359598217"
+             data-ad-slot="2761309226"
+             data-ad-format="auto"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+</div>
+
+<!-- 4. FOOTER -->
+<footer class="container-fluid bg-4 text-center" id="cont">
+    <div id="gglyphicon">
+      <a href="https://github.com/Deepak5j/" target="_blank"><i class="fa fa-github" style="font-size:25px;color: #fff"></i></a>
+      <a href="" style="display: none;"><i class="fa fa-envelope" style="font-size:25px;color: #FFDC7D "></i></a>
+      <a href="https://www.linkedin.com/in/deepakgautam5j" target="_blank"><i class="fa fa-linkedin" style="font-size:25px;color: #007bb5;"></i></a>
+      <a href="https://plus.google.com/+deepakgautamx" target="_blank"><i class="fa fa-google-plus-official" style="font-size:25px;color:  #DB4437"></i></a>
+      <i class="fa fa-gear fa-spin" style="font-size:15px;color: #ff0;"></i>                                            
+      <a href="" style="display: none;" target="_blank"><i class="fa fa-facebook-official" style="font-size:25px;color: #4167B2"></i></a>
+      <a href="https://angel.co/deepakgautam5j" target="_blank"><i class="fa fa-angellist" style="font-size:25px;color:#fff"></i></a>
+      <a href="https://www.quora.com/profile/Deepak-Gautam-111" target="_blank"><i class="fa fa-quora" style="font-size:25px;color:  #B52925"></i></a>
+      <a href="https://www.youtube.com/c/deepakgautamx" target="_blank"><i class="fa fa-youtube-play" style="font-size:25px;color: #F70500"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
