@@ -62,12 +62,15 @@
         <div class="col-sm-2 sidenav">
             <div class="well">
               <a href="index.html" class="btn-block btn btn-default"> Home</a>              
-              <button onclick="change('videos/level-17.mp4', 'LEVEL-17', 'level-17.jpg')" class="btn-block btn btn-info">Level 17</button>
-              <!--https://1fiag6j.oloadcdn.net/dl/l/yKxn8VELj0BFTdTV/v1l5F0E0yxo/Iron+Man+2008.720p.BrRip.x264.YIFY.mp4 -->
-              <button onclick="change('https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man.mp4', 'IRON MAN', 'iron-man.jpg')" class="btn-block btn btn-info">Iron Man</button>                                        
-              <!-- https://ph2dw5.oloadcdn.net/dl/l/Dn4ZsoxGvv-OB2e2/xgOq8JRrN_o/Iron.Man.II.x264.720p.mkv.mp4-->           
-              <button onclick="change('https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man%202.mp4', 'IRON MAN 2', 'iron-man-2.jpg')" class="btn-block btn btn-info ">Iron Man 2</button>
-              <button onclick="change('https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man%203.mp4', 'IRON MAN 3', 'iron-man-3.jpg')" class="btn-block btn btn-info">Iron Man 3</button>
+              <button onclick="change('https://www.youtube.com/embed/D4VETvxWe84?rel=0', 'LEVEL-17', 'level-17.jpg')" class="btn-block btn btn-info">Level 17</button>
+              <button onclick="change('https://www.youtube.com/embed/Uy6U051gNrU', 'IRON MAN', 'iron-man.jpg')" class="btn-block btn btn-info">Iron Man</button>   
+              <button onclick="change('https://www.youtube.com/embed/YYVsDYyf0E0', 'IRON MAN 2', 'iron-man-2.jpg')" class="btn-block btn btn-info ">Iron Man 2</button>
+              <button onclick="change('https://www.youtube.com/embed/lBuKwLBZytU', 'IRON MAN 3', 'iron-man-3.jpg')" class="btn-block btn btn-info">Iron Man 3</button>
+              <button onclick="change('http://vexmovies.org', 'Vex Movies', 'iron-man-3.jpg')" class="btn-block btn btn-info">Vex Movies</button>
+              <!-- old link -->
+              <!-- "https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man.mp4" -->
+              <!-- "https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man%202.mp4" -->
+              <!-- "https://ia800800.us.archive.org/16/items/IronMan-nanhtoy/Iron%20Man%203.mp4" -->
             </div>          
         </div>
 
@@ -78,14 +81,19 @@
               <!--h1 id="myCaption" class="text-center">MOVIES SECTION</h1-->
               <!-- video    -->
 
-              <div id="video_poster">
-                <video id="myVideo" style="width:100% height:100%" poster="images/level-17.jpg" controls >
-                    <!--source src="http://dl.dropboxusercontent.com/s/520os7m2wf1lgxg/iron-man_mpeg4.mp4" type="video/mp4"-->
-                    <!--source src="https://drive.google.com/uc?export=download&id=0B4BsAbG4atWHQzVfLUU3UnhhZTA" type='video/webm'/-->
-                    <source src="www.youtube.com/watch?v=D4VETvxWe84" type="video/mp4" />
-                </video>
+              <!--div onclick="this.nextElementSibling.style.display='block'; this.style.display='none'" id="video_poster_div">
+                  <img src="images/level-17.jpg" width="100%" style="cursor:pointer" id="video_poster" />
+              </div-->
+              
+              <div class="embed-responsive embed-responsive-16by9" style="display:block">
+                  <iframe  id="myVideo" class="embed-responsive-item" src="https://www.youtube.com/embed/D4VETvxWe84?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
               </div>
-                
+
+                <!--video id="myVideo" style="width:100% height:100%" poster="images/level-17.jpg" controls >
+                    <source src="www.youtube.com/watch?v=D4VETvxWe84" type="video/mp4" />
+
+                </video-->
               </div>
               <!--div>
                 style="background:transparent no-repeat url('http://www.wpclipart.com/blanks/buttons/glossy_buttons/glossy_button_blank_orange_rectangle.png');background-size:100%; height: 100%"
